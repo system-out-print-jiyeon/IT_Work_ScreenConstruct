@@ -1,0 +1,59 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.navbar_Wrapper {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+
+}
+
+.navbar_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.emptyWrapper {
+    margin-left: 50px;
+}
+
+.emptyWrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo>div a {
+    font-size: 3rem;
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    color: rgb(57, 146, 230);
+
+}
+
+
+.infoBar table tr td {
+    padding-left: 10px;
+}
