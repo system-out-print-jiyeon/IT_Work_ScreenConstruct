@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+<style>
+        * {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+    box-sizing: border-box;
+}
+
+.navbar_Wrapper {
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.navbar_1200px {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 1200px;
+    height: 100%;
+
+}
+
+.navbar_1200px div {
+    display: flex;
+    justify-content: center;
+
+}
+
+.emptyWrapper {
+    margin-left: 50px;
+}
+
+.emptyWrapper div {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo {
+    display: flex;
+    align-items: center;
+}
+
+.MainLogo>div a {
+    font-size: 3rem;
+    font-family: 'Amiri', serif;
+    text-decoration: none;
+    color: rgb(32, 147, 255);
+
+}
+
+
+.infoBar table tr td i{
+    padding-top: 20px;
+}
+.infoBar table tr td {
+    padding-left: 10px;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar_Wrapper">
+        <div class="navbar_1200px">
+            <div class="emptyWrapper">
+            </div>
+            <div class=MainLogo>
+                <div><a href="">IT Works</a></div>
+            </div>
+            <!-- 드롭버튼 바꾸기 -->
+            <div class="infoBar">
+                <table>
+                    <tr>
+                        <td><i class="material-icons" style="font-size:25px">person_outline</i></td>
+                        <td>OOO 님</td>
+                        <td>▽</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </nav>
+    <hr style="border:1px solid#878787; height: 3px !important; display: block !important; width: 100% !important;"/>
+</body>
+</html>
