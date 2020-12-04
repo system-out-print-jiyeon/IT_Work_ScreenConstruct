@@ -12,7 +12,7 @@
   
 
 <style>
-
+  
  *{
      margin: 0;
      padding: 0;
@@ -102,11 +102,13 @@
 
 .content_1{height: fit-content; padding-left: 50px;}
 
-.content_2{height: fit-content; align-content: center;}
+.content_2{height: fit-content; align-content: center; position: relative;}
 
 .content_3{height: fit-content; padding-left: 50px;}
 
 .w3-bar{height: fit-content; text-align: center;}
+
+.content_1:hover{cursor: pointer;}
 
 table{
     width: 95%;
@@ -124,6 +126,35 @@ th,td{
 }
 
 tr:hover{background-color: #dbd5d5; cursor: pointer;}
+
+/* 문서양식 드롭다운 */
+.formtype{
+    border: 1px solid darkgray;
+    width: 150px;
+    height: 170px;
+    background-color: white;
+    text-align: center;
+    font-size: 15px;
+    z-index: 1000;
+    display: none;
+    margin-left: 50px;
+    position: absolute;
+    
+    
+}
+.formtype div{
+    margin-top: 10px;
+    
+}
+
+.formtype div:hover{
+    background-color: rgb(204, 198, 198);
+}
+.formtype a{
+    text-decoration: none;
+    color: rgb(61, 56, 56);
+    
+}
 </style>
 </head>
 <body>
@@ -172,7 +203,14 @@ tr:hover{background-color: #dbd5d5; cursor: pointer;}
         <div class="content">
 
             <div class="content_1" >
-       <a href="" style="text-decoration: none;">보기 : 모든 문서&nbsp;<i class="fas fa-sort-down"></i></a> 
+       <a  style="text-decoration: none;">보기 : 모든 문서&nbsp;<i class="fas fa-sort-down"></i></a> 
+            </div>
+            <div class="formtype">
+                <div><a href="">모든문서</a></div>
+                <div><a href="">품의서</a></div>
+                <div><a href="">지출결의서</a></div>
+                <div><a href="">프로젝트업무보고서</a> </div>
+                <div><a href="">문서발급요청서</a></div>
             </div>
 
             <div class="content_2">
@@ -348,7 +386,21 @@ tr:hover{background-color: #dbd5d5; cursor: pointer;}
 
   </script>
 
+<script>
 
+    $(document).ready(function(){
+        $(".content_1").click(function(){
+            var submenu = $(".formtype");
+            if(submenu.css("display") == 'none'){
+                submenu.show();
+            }else{
+                submenu.hide();
+            }
+            
+        });
+    });
+
+  </script>
 
 
 
