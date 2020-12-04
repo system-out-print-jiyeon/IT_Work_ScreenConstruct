@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/v4-shims.css">
   <style>
       
-
+ 
       *
         {
             box-sizing: border-box;
@@ -82,15 +82,30 @@
           margin-left: 20px;
           text-decoration: none;
           font-size: 25px;
+          display: inline;
+          
+          
 
           
       }
       .infoText {
           text-decoration: none;
           color: rgb(109, 100, 100);
+          
       }
 
+      .bell{
+          border: 2px solid rgb(109, 100, 100);
+          padding: 7px 7px;
+          border-radius: 50%;
+          color: rgb(109, 100, 100);
+        }
 
+        .username{
+         vertical-align: middle;
+            
+        }
+        span{ display: table-cell;}
 
   </style>
 </head>
@@ -107,8 +122,9 @@
             <input class="searchTxt" type="text" name="" id="" placeholder="문서 검색" width="500px" height="50px">
             <a class="searchBtn" href="#"><i class="fas fa-search "></i></a>
         </div>
+        <span class="bell"><i class="fas fa-bell"></i></span>
         <div class="personalInfo">
-            <a href="" class="infoText"><i class="fas fa-user-circle"></i>&nbsp;홍길동&nbsp;<i class="fas fa-sort-down"></i></a>
+           <a href="" class="infoText"><span><i class="fas fa-user-circle fa-2x"></i></span>&nbsp;<span class="username">홍길동&nbsp;<i class="fas fa-sort-down"></i></span></a>
         </div>
     </nav>
 
