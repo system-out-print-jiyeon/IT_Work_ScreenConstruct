@@ -13,7 +13,7 @@
 
 <style>
   
- *{
+ *{ 
      margin: 0;
      padding: 0;
      
@@ -35,13 +35,13 @@
    height: 45px;
    font-size: larger;
    color: white;
-   background-color: rgb(53, 107, 187);
+   background-color: rgb(84, 129, 189);
    
             }
 
 .button1:hover{
    cursor: pointer;
-   background-color: rgb(13, 69, 141);
+   background-color: rgb(27, 97, 189);
    
             }
 
@@ -52,8 +52,10 @@
     padding: 8px 24px;
     width: 300px;
     height: 100vh;
-    background-color: #878787;
-    position: sticky;
+    background-color: #e7e1e1;
+    position: fixed;
+    
+    
 
 }
 
@@ -67,15 +69,15 @@
     display: block;
     text-decoration: none;
     line-height: 40px;
-    color: white;
+    color: rgb(107, 102, 102);
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 40px;
     box-sizing: border-box;
     
 }
 
 .sidebar_menu a:hover{
-    color: rgb(90, 88, 75);
+    color: rgb(39, 37, 37);
 }
 
 
@@ -94,13 +96,14 @@
 .content{
    
     width:100%;
+    margin-left: 300px;
     
     display:block;
     margin-top: 100px;
 
 }
 
-.content_1{height: fit-content; padding-left: 50px;}
+.content_1{height: fit-content; margin-left: 50px; width: fit-content;}
 
 .content_2{height: fit-content; align-content: center; position: relative;}
 
@@ -118,14 +121,14 @@ table{
     background: #fafafa;
     text-align: center;
 }
-th{background: #aea9af;}
+th{background: #e7e1e1;}
 
 th,td{
     padding: 10px 15px;
 
 }
 
-tr:hover{background-color: #dbd5d5; cursor: pointer;}
+tbody tr:hover{background-color: #dbd5d5; cursor: pointer;}
 
 /* 문서양식 드롭다운 */
 .formtype{
@@ -203,7 +206,7 @@ tr:hover{background-color: #dbd5d5; cursor: pointer;}
         <div class="content">
 
             <div class="content_1" >
-       <a  style="text-decoration: none;">보기 : 모든 문서&nbsp;<i class="fas fa-sort-down"></i></a> 
+       <a  style="text-decoration: none;" >보기 : 모든 문서&nbsp;<i class="fas fa-sort-down"></i></a> 
             </div>
             <div class="formtype">
                 <div><a href="">모든문서</a></div>

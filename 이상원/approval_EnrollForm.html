@@ -10,10 +10,14 @@
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <script src="http://code.jquery.com/jquery-1.8.2.min.js"></script>
   
+  
+  
+  <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-lite.min.js"></script>
 
 <style>
   
- *{
+ *{ 
      margin: 0;
      padding: 0;
      
@@ -36,13 +40,13 @@
    height: 45px;
    font-size: larger;
    color: white;
-   background-color: rgb(53, 107, 187);
+   background-color: rgb(84, 129, 189);
    
             }
 
 .button1:hover{
    cursor: pointer;
-   background-color: rgb(13, 69, 141);
+   background-color: rgb(27, 97, 189);
    
             }
 
@@ -53,7 +57,7 @@
     padding: 8px 24px;
     width: 300px;
     height: 100vh;
-    background-color: #878787;
+    background-color: #e7e1e1;
     position: fixed;
     
     
@@ -70,15 +74,15 @@
     display: block;
     text-decoration: none;
     line-height: 40px;
-    color: white;
+    color: rgb(107, 102, 102);
     font-size: 20px;
-    padding-left: 10px;
+    padding-left: 40px;
     box-sizing: border-box;
     
 }
 
 .sidebar_menu a:hover{
-    color: rgb(90, 88, 75);
+    color: rgb(39, 37, 37);
 }
 
 
@@ -150,6 +154,27 @@
     height: 40px;
 }
 
+/* 기안하기 버튼 */
+
+.submitButton{
+    padding: 30px;
+    padding-bottom: 100px;
+    text-align: center;
+    
+}
+
+.submitButton button{
+    width: 150px;
+    height: 50px;
+    background-color: #e7e1e1;
+    border-radius: 10px;
+    border-style: none;
+}
+
+/* 써머노트 */
+.detailContents{
+    margin-left: 30px;
+}
 </style>
 </head>
 <body>
@@ -322,17 +347,24 @@
 
             <div class="detailContents">
 
-
+                <div id="summernote"></div>
 
 
             </div>
 
-            <div class="attachment" style="border:dashed; width: 800px; margin: 30px;">
+            <div class="attachment" style="border:dashed; width: 800px; margin: 30px; display: flex;">
             
-                <h5>별첨</h5> <h6>파일 첨부</h6>  <h6>관련문서 첨부</h6>
+                <h5 style="margin: 30px;">별첨</h5>
+                <h6 style="margin-top: 30px; margin-bottom: 30px; color: rgb(73, 174, 233); border-right: 1px solid#878787;">파일 첨부 &nbsp;</h6> &nbsp; 
+                <h6 style="margin-top: 30px; color: rgb(73, 174, 233);">관련문서 첨부</h6> 
+                <h6 style="margin-top: 30px; margin-bottom: 30px; margin-left: 100px; text-align: center; color: #878787;" >여기로 파일을 끌어놓으세요</h6>
                 
                 
 
+            </div>
+
+            <div class="submitButton">
+                <button>기안하기</button>
             </div>
 
 
@@ -362,7 +394,30 @@
         });
     });
 
+
+
+    $('#summernote').summernote({
+        
+        tabsize: 2,
+        width:800,
+        height: 500,
+        toolbar: [
+          ['style', ['style']],
+          ['font', ['bold', 'underline', 'clear']],
+          ['color', ['color']],
+          ['para', ['ul', 'ol', 'paragraph']],
+          ['table', ['table']],
+          ['insert', ['link', 'picture', 'video']],
+          ['view', ['fullscreen', 'codeview', 'help']]
+        ]
+      });
+
   </script>
+
+
+
+
+
 
 
 
