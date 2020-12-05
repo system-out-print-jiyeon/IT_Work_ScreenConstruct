@@ -841,6 +841,59 @@
         });
     });
 
+    /* 결재선 팀원 드롭다운 */
+    $(document).ready(function(){
+        $(".modalDiv_business").click(function(){
+        var submenu = $(".member1");
+        if(submenu.css("display") == 'block'){
+            submenu.slideUp();
+        }else{
+            submenu.slideDown();
+        }
+        
+    });
+
+    $(".modalDiv_personnel").click(function(){
+        var submenu = $(".member2");
+        if(submenu.css("display") == 'block'){
+            submenu.slideUp();
+        }else{
+            submenu.slideDown();
+        }
+        
+    });
+
+    $(".modalDiv_accounting").click(function(){
+        var submenu = $(".member3");
+        if(submenu.css("display") == 'block'){
+            submenu.slideUp();
+        }else{
+            submenu.slideDown();
+        }
+        
+    });
+
+    $(".modalDiv_developer").click(function(){
+        var submenu = $(".member4");
+        if(submenu.css("display") == 'block'){
+            submenu.slideUp();
+        }else{
+            submenu.slideDown();
+        }
+        
+    });
+
+    $(".modalDiv_planning").click(function(){
+        var submenu = $(".member5");
+        if(submenu.css("display") == 'block'){
+            submenu.slideUp();
+        }else{
+            submenu.slideDown();
+        }
+        
+    });
+});
+
   </script>
 
 
