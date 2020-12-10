@@ -1,0 +1,75 @@
+.documentRequest_table {
+    width: 800px;
+    border-collapse: collapse !important;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    font-size: 12px;
+    font-family: malgun gothic, dotum, arial, tahoma;
+}
+
+.documentRequest_table1 {
+    width: 800px;
+    border-collapse: collapse !important;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    font-size: 12px;
+    font-family: malgun gothic, dotum, arial, tahoma;
+}
+
+.documentRequest_table2 {
+    width: 800px;
+    border-collapse: collapse !important;
+    color: black;
+    background: white;
+    border: 1px solid black;
+    font-size: 12px;
+    font-family: malgun gothic, dotum, arial, tahoma;
+}
+
+.documentRequest_table3 {
+    width: 770px;
+    margin: 9px;
+    border-collapse: collapse !important;
+    color: black;
+    background: white;
+    border: 2px solid black;
+    font-size: 12px;
+    font-family: malgun gothic, dotum, arial, tahoma;
+}
+
+.documentRequestTitle {
+    padding: 3px;
+    border: 1px solid black;
+    height: 90px !important;
+    font-size: 27px;
+    font-weight: bold;
+    text-align: center;
+    vertical-align: middle;
+}
+
+.documentRequest_td_name {
+    padding: 3px;
+    height: 20px;
+    vertical-align: middle;
+    border: 1px solid black;
+    text-align: center;
+    font-weight: bold;
+}
+
+.documentRequest_td_value {
+    padding: 3px;
+    height: 20px;
+    vertical-align: middle;
+    border: 1px solid black;
+    text-align: left;
+}
+
+.documentRequest_info {
+    padding: 3px;
+    height: 20px;
+    vertical-align: middle;
+    border: 1px solid black;
+    text-align: center;
+}
