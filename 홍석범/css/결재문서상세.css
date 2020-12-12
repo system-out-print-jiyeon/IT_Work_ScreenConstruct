@@ -1,0 +1,341 @@
+*{ 
+   margin: 0;
+   padding: 0;
+   
+   box-sizing: border-box;
+}
+
+.wrap{width: 100%; 
+    height: 100%;
+    display: flex;
+    
+  
+  }
+/* 작성하기 버튼 */
+.writeButton{text-align: center;}
+
+.button1{
+ border-radius: 10px;
+ border: 0;
+ width: 250px;
+ height: 45px;
+ font-size: larger;
+ color: white;
+ background-color: rgb(84, 129, 189);
+ 
+          }
+
+.button1:hover{
+ cursor: pointer;
+ background-color: rgb(27, 97, 189);
+ 
+          }
+
+/* 사이드바 */
+.sidebar{
+  
+  justify-content: space-between;
+  padding: 8px 24px;
+  width: 300px;
+  height: 100vh;
+  background-color: #e7e1e1;
+  position: fixed;
+  
+  
+
+}
+
+
+.sidebar_menu{
+  align-items: center;
+  list-style: none;
+}  
+
+.sidebar_menu a{
+  display: block;
+  text-decoration: none;
+  line-height: 40px;
+  color: rgb(107, 102, 102);
+  font-size: 20px;
+  padding-left: 40px;
+  box-sizing: border-box;
+  
+}
+
+.sidebar_menu a:hover{
+  color: rgb(39, 37, 37);
+}
+
+
+.menu1 li{ 
+  padding-left: 60px;
+  list-style: none; 
+}
+
+.profile:hover{cursor: pointer;}
+.profile .menu1{display: none;}
+
+
+/* 문서작성폼 */
+.enrollForm{
+  margin-left: 300px;
+  
+}
+
+.titleBox{
+  margin-left: 30px; 
+  position: relative;
+}
+
+.titleBox:hover{
+  cursor: pointer;
+}
+
+.infoTable{
+  border-collapse: collapse;
+  text-align: center;
+  width: 800px;
+  height: 100px;
+  
+}
+
+.infoTable th{
+  background-color: #e7e1e1;
+}
+
+.infoTable td{
+  padding-left: 20px;
+}
+
+.approvalLine{
+  width: 100%;
+  margin-left: 30px;
+}
+.approvalTable{
+  border-collapse: collapse;
+  text-align: center;
+  width: 800px;
+  height: 200px;
+}
+
+.approvalTable th{
+  background-color:  #e7e1e1;
+  width: 80px;
+}
+
+.mainTitle{
+  height: 150px;
+}
+
+.secondTitle{
+  height: 40px;
+}
+
+.firstCell{
+  height: 40px;
+}
+
+.secondCell{
+  height: 80px;
+}
+
+.thirdCell{
+  height: 40px;
+}
+
+/* 기안하기 버튼 */
+
+.submitButton{
+  padding: 30px;
+  padding-bottom: 100px;
+  text-align: center;
+  
+}
+
+.submitButton button{
+  width: 150px;
+  height: 50px;
+  background-color: #e7e1e1;
+  border-radius: 10px;
+  border-style: none;
+}
+
+/* 써머노트 */
+.detailContents{
+  margin-left: 30px;
+}
+
+/* 결재선 모달  */
+
+.modalDiv{
+      margin: 50px;
+      background-color: white;
+      border: 1px solid  #878787;
+      width: 900px;
+      height: 600px;
+      box-sizing: border-box;
+      z-index: 10000;
+      position: absolute;
+      top: 15%;
+      left: 20%;
+      display: none;
+      
+      
+     
+  }
+  .modalDiv_1{
+      
+      margin-top: 20px;
+      margin-bottom: 20px;
+      margin-left: 30px;
+      color: rgb(73, 174, 233); 
+      
+  }
+
+  .modalCancel:hover{
+      cursor: pointer;
+  }
+
+  .modalDiv_2{
+      height: 5%;
+  }
+
+  .modalDiv_3{
+      height: 75%;
+  }
+
+  .modalDiv_3_1{
+      width: 25%;
+      position: relative;
+  }
+
+  .modalDiv_3_1_1{
+      width: 88%;
+      height: 98%;
+      border: 1px solid #878787;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      overflow: scroll;
+  }
+
+  .modalDiv_3_1_1 div{
+      margin-left: 5px;
+      margin-top: 5px;
+      
+  }
+
+  .modalDiv_3_1_1 div div{
+      margin-left: 15px;
+      
+  }
+
+
+  .modalDiv_3_2{
+      width:15%;
+      display: block;
+      text-align: center;
+
+      
+      
+  }
+
+  .modalDiv_3_2 button{
+      width: 100px;
+      height: 40px;
+      margin-top: 20px;
+      margin-bottom: 20px;
+      vertical-align: middle;
+
+      
+      
+      
+  }
+
+  .modalDiv_3_3{
+      width:60%;
+      
+  }
+
+  .modalDiv_3_3_1{
+      width: 97%;
+      height: 72.5%;
+      border: 1px solid #878787;
+      overflow: scroll;
+     
+      
+
+  }
+
+  .modalDiv_3_3_2{
+   
+  }
+
+  .modalDiv_3_3_3{
+      width: 97%;
+      height: 15%;
+      border: 1px solid #878787;
+  }
+
+  .modalDiv_4{
+      height: 10%;
+      text-align: center;
+  }
+
+  .modalDiv_4 button{
+      margin-top: 5px;
+      margin-left: 20px;
+      margin-right: 20px;
+  }
+
+  .table1{
+      border:1px solid  #878787;
+      text-align: center;
+      
+  }
+
+  .table1 tr{
+      height: 50px;
+      
+  }
+
+  
+
+  .th_numbering{
+      width: 30px;
+      
+      
+  }
+
+  .td_nameSpace{
+      width: 140px;
+      
+  }
+
+  .th_category{
+      width: 100px;
+      border-right-style: hidden;
+  }
+
+  .td_reference{
+      background-color: #878787;
+      width: 130px;
+      height:55px;
+      text-align: center;
+      border: 3px solid white;
+
+  }
+
+  /* dim */
+
+  .dim{
+      position: fixed;
+      left: 0;
+      top: 0;
+      z-index: 900;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      display: none;
+  }
