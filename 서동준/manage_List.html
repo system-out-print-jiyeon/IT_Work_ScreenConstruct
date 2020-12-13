@@ -217,7 +217,7 @@ tbody tr:hover{background-color: rgb(52, 152, 219); color: white;}
             <div class="content_1">
                 <h2>사원 리스트 조회</h2>
                 <div class="search" style="margin-left: 770px;">
-                    <form action="" method="POST">
+                    <form action="search.me" method="GET" id="searchForm">
                         <select name="selectList" id="selectList">
                             <option>사원명</option>
                             <option>부서</option>
@@ -371,9 +371,12 @@ tbody tr:hover{background-color: rgb(52, 152, 219); color: white;}
                     </table>
                 </div>
 
-            <div class="content_2">
-                
-            </div>
+                <script>
+                    $(".content_2 tbody>tr").click(function(){
+                        alert("리스트 상세보기");
+                    })
+                </script>
+
             <br>
             <div class="content_3">
                 <p>사원 수 : XXX </p>
