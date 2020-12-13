@@ -46,7 +46,7 @@
     justify-content: space-between;
     padding: 8px 24px;
     width: 300px;
-    height: 1400px;
+    height: 1300px;
     background-color: #e7e1e1;
 }
 
@@ -81,35 +81,33 @@
 .contentArea{width: 100%; height: 1200px;}
 .content1{
     width: 100%;
-    height: 350px; 
     float: left;
-    padding: 40px;
+    padding: 20px;
     }
 .content2{width: 100%; height: 850px; float: left;}
+.content1 div{float: left;}
 
-.sysdateTable tr td{
-    padding: 15px;
-}
-.work-btn{
-    background: rgb(155, 155, 155);
-    color: rgb(255, 255, 255);
-    border-radius: 10px;
-    width: 90px;
-    height: 40px;
-}
-.work-btn:hover{
-    background: rgb(21, 130, 255);
-    color: white;
-    border-radius: 10px;
-}
 .nameBar{
-    padding: 20px;
+    padding-top: 50px;
+    padding-left: 40px;
 }
 .nameBar h5{
     font-weight: 900;
 }
+.anuualBar{
+    background: lightgray;
+    width: 240px;
+    height: 40px;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 8px;
+    font-size: 16px;
+}
 
 /* 테이블 */
+#annualTable tr td{
+    padding: 20px;
+}
 .workList{
     padding: 20px;
 }
@@ -203,60 +201,38 @@
             </script>
 
             <div class="contentArea">
+                <br><br><br>
+                <div class="nameBar"><h5>연차 내역 조회</h5></div>
 
                 <div class="content1">
-                    <table class="sysdateTable">
-                        <tr>
-                            <td>사용한 휴가개수 00 개 | 미사용 00개</td>
-                            <td><div class="btn btn-primary" class="sysdateBar">2020년 11월 25일 (수)</div></td>
-                        </tr>
-                        <tr>
-                            <td colspan="2"><h2>AM 09:00:02</h2></td>
-                        </tr>
+                    <table id="annualTable">
                         <tr>
                             <td>
-                                <form action="">
-                                    <button class="work-btn" type="button">출근</button>
-                                    &nbsp;&nbsp; &nbsp;&nbsp;
-                                    <button class="work-btn" type="button">퇴근</button>
+                                <div class="anuualBar"><i class='far fa-check-circle' style='font-size:20px'></i> 사용한 휴가 개수 00개</div>
                             </td>
                             <td>
-                                    <select name="" id="">
-                                        <option value="서울지사">서울지사</option>
-                                        <option value="경기지사">경기지사</option>
-                                    </select>
-                                    &nbsp;&nbsp;
-                                    <button  class="btn btn-primary" class="submit-btn" type="submit">&nbsp; 입력 &nbsp;</button>
-                                </form>
+                                <div class="anuualBar"><i class='far fa-circle' style='font-size:20px'></i> 미사용 휴가 00개</div>
                             </td>
                         </tr>
                     </table>
+                   
 
                 </div>
 
                 <div class="content2">
-                    <div class="nameBar"><h5>ooo 님의 출퇴근 기록</h5></div>
 
                     <div class="workList">
                         <table id="workListTable" class="table">
                             <tr class="tdTitle">
                                 <td>일자</td>
                                 <td>요일</td>
-                                <td>출근시각</td>
-                                <td>출근위치</td>
-                                <td>퇴근시각</td>
-                                <td>퇴근위치</td>
-                                <td>총 근무시간</td>
+                                <td>연차 기간</td>
                                 <td>상태</td>
                             </tr>
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -264,11 +240,7 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -276,11 +248,7 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -288,11 +256,7 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -300,11 +264,7 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -312,11 +272,7 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -324,11 +280,7 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -336,11 +288,7 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
@@ -348,15 +296,20 @@
                             <tr>
                                 <td>2020-11-23</td>
                                 <td>월</td>
-                                <td>09:00</td>
-                                <td>서울지사</td>
-                                <td>18:00</td>
-                                <td>경기지사</td>
-                                <td>09:00</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
                                 <td>
                                     <p class="btn btn-primary">처리완료</p>
                                 </td>
                             </tr>
+                            <tr>
+                                <td>2020-11-23</td>
+                                <td>월</td>
+                                <td>2020-12-01 ~ 2020-12-02</td>
+                                <td>
+                                    <p class="btn btn-primary">처리완료</p>
+                                </td>
+                            </tr>
+                           
                             
                         </table>
                     </div>
